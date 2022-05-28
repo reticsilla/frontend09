@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/hatter.jpg');
+}
+
+img {
+    max-width: 800px;
+    height: auto;
+}
+
+.modal-header,
+.modal-body {
+    background-color: wheat;
+}
+
+.bg-torzs {
+    margin: 30px auto;
+    padding: 30px 0;
+}
+
+.bg-torzs1 {
+    margin: 0px auto;
+    padding: 0;
+}
+
+.enabled {
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.szoveg {
+    margin-top: 20px;
+}
+
+#logo {
+    width: auto;
+    height: 30px;
+}
+
+#gomb0 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#tartalom {
+    margin: 0px auto;
+}
+
+#Megjelenito0,
+#Megjelenito1,
+#Megjelenito2,
+#Megjelenito3,
+#Megjelenito4,
+#gomb0,
+#szamitas,
+#regGomb {
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    margin: 0px auto;
+    color: wheat;
+    background-color: rgba(0, 0, 0);
+    font-weight: bold;
+}
+
+#Megjelenito3,
+#gomb0,
+#szamitas,
+#regGomb {
+    cursor: pointer;
+}
+
+#gomb0 {
+    top: 80px;
+}
+
+#szamitas {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#Elem0,
+#Elem1,
+#Elem2,
+#Elem3,
+#Elem4 {
+    margin: 10px auto;
+    background-color: rgb(108, 117, 125);
+    display: none;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    box-shadow: 2px 2px 5px black;
+}
+
+#Elem0 {
+    width: 100%;
+    height: 230vh;
+    margin-top: 40px;
+    color: wheat;
+}
+
+#Elem1 {
+    width: 100%;
+    margin-top: 65px;
+    height: 130px;
+    color: wheat;
+}
+
+#Elem2 {
+    width: 40%;
+    height: 300px;
+    text-align: center;
+}
+
+#Elem3 {
+    width: 50%;
+    height: 460px;
+    text-align: center;
+}
+
+#Elem4 {
+    width: 100%;
+    height: 300px;
+    color: wheat;
+}
+
+#div1,
+#div2,
+#div3,
+#div4 {
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#div0 {
+    position: relative;
+    left: 0;
+    width: 30%;
+    height: 230vh;
+    background-color: coral;
+    font-weight: bold;
+    text-align: center;
+    animation: mymove 60s infinite;
+}
+
+#div1 {
+    height: 130px;
+    color: wheat;
+}
+
+#div2,
+#div4 {
+    height: 300px;
+}
+
+#div3 {
+    height: 460px;
+    font-weight: bold;
+    color: wheat;
+}
+
+#sugar,
+#magassag,
+#terfogat,
+#felszin,
+#nev,
+#felhasznaloiNev,
+#szuletesiDatum {
+    width: 100%;
+    margin: 0 auto;
+    color: coral;
+    font-weight: bold;
+    text-align: left;
+}
+
+#fnev,
+#reg {
+    margin-top: 23px;
+}
+
+#uzenet {
+    width: 90%;
+    height: 45px;
+    margin: 10px auto;
+    padding: 10px 0;
+
+}
+
+#szinek {
+    padding-left: 10px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: left;
+}
+
+.red {
+    color: red;
+    margin-left: 10px;
+}
+
+.orange {
+    color: orange;
+    margin-left: 10px;
+}
+
+.black {
+    color: black;
+    margin-left: 10px;
+}
+
+.blue {
+    color: blue;
+    margin-left: 10px;
+}
+
+.green {
+    color: green;
+    margin-left: 10px;
+}
+
+#panel {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid red;
+    background-color: red;
+}
+
+@keyframes LenyilasAnimacio0 {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 230vh;
+    }
+}
+
+@keyframes BezarodasAnimacio0 {
+    from {
+        height: 230vh;
+    }
+
+    to {
+        height: 0px;
+    }
+}
+
+@keyframes LenyilasAnimacio1 {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 130px;
+    }
+}
+
+@keyframes BezarodasAnimacio1 {
+    from {
+        height: 130px;
+    }
+
+    to {
+        height: 0px;
+    }
+}
+
+@keyframes LenyilasAnimacio2 {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 300px;
+    }
+}
+
+@keyframes BezarodasAnimacio2 {
+    from {
+        height: 300px;
+    }
+
+    to {
+        height: 0px;
+    }
+}
+
+@keyframes LenyilasAnimacio3 {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 460px;
+    }
+}
+
+@keyframes BezarodasAnimacio3 {
+    from {
+        height: 460px;
+    }
+
+    to {
+        height: 0px;
+    }
+}
+
+@keyframes LenyilasAnimacio4 {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 300px;
+    }
+}
+
+@keyframes BezarodasAnimacio4 {
+    from {
+        height: 300px;
+    }
+
+    to {
+        height: 0px;
+    }
+}
+
+@keyframes mymove {
+    50% {
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .bg-torzs {
+        margin: 0px auto;
+        padding: 10px 0;
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+    #gomb0 {
+        margin-top: 200px;
+    }
+
+    #Elem0 {
+        height: 695vh;
+        margin-top: 40px;
+    }
+
+    #Elem1 {
+        height: 300px;
+    }
+
+    #Elem2 {
+        margin-top: 15px;
+        width: 100%;
+        height: 250px;
+    }
+
+    #Elem3 {
+        width: 100%;
+    }
+
+    #Elem4 {
+        height: 380px;
+    }
+
+    #div0 {
+        animation: mymove 20s infinite;
+        height: 695vh;
+    }
+
+    #div1 {
+        height: 300px;
+    }
+
+    #div2 {
+        height: 250px;
+    }
+
+    #div4 {
+        height: 380px;
+    }
+
+    #szinek {
+        padding-left: 0px;
+    }
+
+    .red,
+    .orange,
+    .black,
+    .blue,
+    .green {
+        margin-left: 5px;
+    }
+
+    @keyframes LenyilasAnimacio0 {
+        from {
+            height: 0px;
+        }
+
+        to {
+            height: 695vh;
+        }
+    }
+
+    @keyframes BezarodasAnimacio0 {
+        from {
+            height: 695vh;
+        }
+
+        to {
+            height: 0px;
+        }
+    }
+
+    @keyframes LenyilasAnimacio1 {
+        from {
+            height: 0px;
+        }
+
+        to {
+            height: 300px;
+        }
+    }
+
+    @keyframes BezarodasAnimacio1 {
+        from {
+            height: 300px;
+        }
+
+        to {
+            height: 0px;
+        }
+    }
+
+    @keyframes LenyilasAnimacio2 {
+        from {
+            height: 0px;
+        }
+
+        to {
+            height: 250px;
+        }
+    }
+
+    @keyframes BezarodasAnimacio2 {
+        from {
+            height: 250px;
+        }
+
+        to {
+            height: 0px;
+        }
+    }
+
+    @keyframes LenyilasAnimacio4 {
+        from {
+            height: 0px;
+        }
+
+        to {
+            height: 380px;
+        }
+    }
+
+    @keyframes BezarodasAnimacio4 {
+        from {
+            height: 380px;
+        }
+
+        to {
+            height: 0px;
+        }
+    }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gyakorló feladatsor</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img src="./img/logo.png" alt="Logó" title="Logó" id="logo">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="" id="Megjelenito0"
+                            onclick='megjelenitesAnimacioval(Elem0,Megjelenito0,gomb0,div0,"LenyilasAnimacio0","BezarodasAnimacio0","Feladat1")'>
+                            Feladat1
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="" id="Megjelenito1"
+                            onclick='megjelenitesAnimacioval(Elem1,Megjelenito1,szamitas,div1,"LenyilasAnimacio1","BezarodasAnimacio1","Feladat2")'>
+                            Feladat2
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="" id="Megjelenito2"
+                            onclick='megjelenitesAnimacioval1(Elem2,Megjelenito2,div2,"LenyilasAnimacio2","BezarodasAnimacio2","Feladat3")'>
+                            Feladat3
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="" id="Megjelenito3"
+                            onclick='megjelenitesAnimacioval1(Elem3,Megjelenito3,div3,"LenyilasAnimacio3","BezarodasAnimacio3","Feladat4")'>
+                            Feladat4
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="" id="Megjelenito4"
+                            onclick='megjelenitesAnimacioval(Elem4,Megjelenito4,regGomb,div4,"LenyilasAnimacio4","BezarodasAnimacio4","Feladat5")'>
+                            Feladat5
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center" id="tartalom">
+        <div class="text-center " id="Elem0" style="display: none;">
+            <button id="gomb0" style="display: block;" onclick='valtogatas(div0,gomb0)'></button>
+            <div id="div0" style="display: none;">
+                <script src="./Feladat1/feladat1.js"></script>
+            </div>
+        </div>
+        <div class="text-center " id="Elem1" style="display: none;">
+            <div id="div1" style="display: block;">
+                <form class="text-center">
+                    <div class="row bg-torzs align-items-center">
+                        <div class="col-12 col-md-3">
+                            <label for="sugar">Add meg a henger sugarát!</label>
+                            <input type="number" id="sugar" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="magassag">Add meg a henger magasságát!</label>
+                            <input type="number" id="magassag" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-2 szoveg">V = <b id="terfogat"></b></div>
+                        <div class="col-12 col-md-2 szoveg">A = <b id="felszin"></b></div>
+                        <div class="col-12 col-md-2">
+                            <button type="button" id="szamitas" onclick="hengerSzamitas()">Számítás</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="text-center " id="Elem2" style="display: none;">
+            <div id="div2" style="display: block;">
+                <div class="row bg-torzs align-items-center">
+                    <div class="col-3">
+                        <form id="szinek">
+                            <div class="form-check">
+                                <input class="form-check-input btn btn-danger" type="radio" name="szin" value="red"
+                                    id="red" aria-checked="true">
+                                <label class="form-check-label red" for="red">Piros</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input btn btn-warning" type="radio" name="szin" value="orange"
+                                    id="orange">
+                                <label class="form-check-label orange" for="orange">Sárga</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input btn btn-dark" type="radio" name="szin" value="black"
+                                    id="black">
+                                <label class="form-check-label black" for="black">Fekete</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input btn btn-primary" type="radio" name="szin" value="blue"
+                                    id="blue">
+                                <label class="form-check-label blue" for="blue">Kék</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input btn btn-success" type="radio" name="szin" value="green"
+                                    id="green">
+                                <label class="form-check-label green" for="green">Zöld</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-9">
+                        <div id="panel"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center " id="Elem3" style="display: none;">
+            <div id="div3" style="display: block;">
+                <div class="row bg-torzs align-items-center">
+                    <div class="col-12 col-md-3">
+                        <h2 id="ido"></h2>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <canvas id="canvas" width="400" height="400"
+                            style="background-color:rgb(108, 117, 125);"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center " id="Elem4" style="display: none;">
+            <div id="div4" style="display: block;">
+                <form class="needs-validation text-center" novalidate>
+                    <div class="row bg-torzs align-items-center">
+                        <div class="col-12 col-md-4">
+                            <label for="nev">Név:</label>
+                            <input type="text" id="nev" class="form-control" minlength="8" maxlength="50" required>
+                        </div>
+                        <div class="col-12 col-md-4" id="fnev">
+                            <label for="felhasznaloiNev">Felhasználói név:</label>
+                            <input type="text" id="felhasznaloiNev" class="form-control" minlength="6" maxlength="28"
+                                required><br>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <label for="szuletesiDatum">Születési dátum:</label>
+                            <input type="date" id="szuletesiDatum" class="form-control" min="1916-01-01" max=""
+                                required>
+                        </div>
+                        <div class="col-12 col-md-2" id="reg">
+                            <button type="button" id="regGomb">Regisztráció</button>
+                        </div>
+                    </div>
+                    <div class="row bg-torzs1 align-items-center">
+                        <div class="col" id="uzenet"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+            data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\logo.png" alt="Nagy logó" title="Nagy logó">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/folap.js"></script>
+    <script src="./Feladat2/feladat2.js"></script>
+    <script src="./Feladat4/feladat4.js"></script>
+    <script src="./Feladat5/feladat5.js"></script>
+</body>
+
+</html>
